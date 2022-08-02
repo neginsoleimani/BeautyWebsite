@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+:root {
+    --light-color: #f1f2f2;
+    --pink-color: #f0dbcd;
+    --brown-color: #ba7342;
+    --green-color: #2a7669;
+    --white-color: #fff;
+    --black-color: #000;
+
+    /* font family */
+    --font-family: 'Open Sans', sans-serif;
+    --font-family-h1: 'Philosopher', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-family: var(--font-family);
+    font-size: 0.825rem;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* left */
+
+.left {
+    background: #000;
+    display: grid;
+    grid-template-rows: 1fr 0.25fr;
+    font-family: var(--font-family);
+}
+
+
+.left-img {
+    background-color: var(--white-color);
+    background-image: url("/asset/images/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.left-contact {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.left h3 {
+    font-weight: bold;
+}
+
+.left-icon {
+    background-color: var(--brown-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-icon i {
+    color: var(--white-color);
+    font-size: 2rem;
+}
+
+
+.left-link {
+    background-color: var(--pink-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 6rem;
+}
+
+.left-link a {
+    text-decoration: none;
+    color: white;
+}
+
+/* right */
+
+.right {
+    background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url("/asset/images/image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 1.5fr;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+}
+
+.nav-links a {
+    padding: 0 1rem;
+}
+
+nav div i {
+    padding: 0 0.5rem;
+
+}
+
+.right-des {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+}
+
+.right-des-text {
+    padding: 0 56px;
+    margin-top: 2.5rem;
+}
+
+.right-des-text h1 {
+    font-family: var(--font-family-h1);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.right-des-text p {
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+    margin-bottom: 3rem;
+}
+
+.right-des-text a {
+    padding: 1rem 3rem;
+    text-align: center;
+    background-color: var(--brown-color);
+    color: var(--white-color);
+    border-radius: 16px;
+}
+
+.right-des-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.right-des-icon a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-family: var(--font-family);
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--black-color);
+    border-radius: 50%;
+    font-size: 0.625rem;
+}
+
+.right-contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.right-contact-img {
+    background-color: var(--white-color);
+    background-image: url("/asset/images/image2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.right-contact-des {
+    display: grid;
+    padding: 2rem 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--green-color);
+}
+
+.right-contact-des div {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.right-contact-des div h3 {
+    color: var(--white-color);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.right-contact-des div a {
+    color: var(--white-color);
+    font-size: 0.775rem;
+}
+
+
+
+.right-contact-icon i {
+    color: var(--white-color);
+    font-size: 2rem;
+
+}
